@@ -1,7 +1,25 @@
-//$primary: #000000;
-//$secondary: #00B7F1;
-//
-//@mixin montserrat-regular {
-//  font-family: 'Montserrat', sans-serif;
-//  font-weight: 400;
-//}
+$white: #ffffff;
+$black: #000000;
+$gray: #A8B6BD;
+$dark-green: #1C3643;
+$light-green: #77868E;
+
+@mixin ptsans-regular {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin ptsans-bold {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+@mixin cormorant-regular {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+
+@mixin cormorant-bold {
+  font-family: 'Cormorant', serif;
+  font-weight: 700;
+}

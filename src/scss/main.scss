@@ -3,10 +3,14 @@
 @import "settings";
 
 
+//Страницы
+
+@import "./pages/home";
 
 
 
+@import "./components/contact-info";
+@import "./components/main-menu";
 
-@import "./components/header";
 @import "./components/footer";
-@import "media";
+

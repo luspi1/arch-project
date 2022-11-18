@@ -2,17 +2,27 @@
 <html lang="ru" class="page">
 
 @include('partials/head.html', {
-'title': 'Главная'
+'title': 'ООО АРХ-ПРОЕКТ'
 })
 
 <body class="page__body">
 <div class="site-container">
-  @include('partials/header.html', {})
+  <div class="header">
+    <div class="container">
+      @include('partials/contact-info.html')
+      @include('partials/main-menu.html')
+
+      <div class="header__inner">
+
+      </div>
+
+    </div>
+  </div>
 
   <main class="main">
-    <section class="section">
+    <section class="section services">
       <div class="container">
-        <h2 class="section__title">Section 1</h2>
+        <h2 class="main-subtitle">Наши услуги</h2>
       </div>
     </section>
   </main>

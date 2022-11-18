@@ -1,0 +1,53 @@
+.contact-info {
+  padding: 20px 0;
+  display: flex;
+
+
+  &__list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item {
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      color: $gray;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 63px;
+    }
+  }
+
+  &__list-socials {
+    padding-top: 5px;
+    a {
+      height: 31px;
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      svg path {
+        transition: all .3s;
+      }
+
+      &:hover {
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+
+}
