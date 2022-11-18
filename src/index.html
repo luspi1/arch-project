@@ -6,29 +6,34 @@
 })
 
 <body class="page__body">
-<div class="site-container">
-  <div class="header">
-    <div class="container">
-      @include('partials/contact-info.html')
-      @include('partials/main-menu.html')
-
-      <div class="header__inner">
-
-      </div>
-
-    </div>
-  </div>
-
-  <main class="main">
-    <section class="section services">
+  <div class="site-container">
+    <div class="header">
       <div class="container">
-        <h2 class="main-subtitle">Наши услуги</h2>
-      </div>
-    </section>
-  </main>
+        @include('partials/contact-info.html')
+        @include('partials/main-menu.html')
 
-  @include('partials/footer.html')
-</div>
+        <div class="header__inner">
+          <h1 class="header__title">
+            <span>Общество с ограниченной ответственностью</span>
+            «АРХ-ПРОЕКТ»
+          </h1>
+          <p class="header__description">Комплекс архитектурно-строительных работ на объектах культурного наследия от проекта до ввода
+            в эксплуатацию</p>
+          <a href="#" class="header__link">Наши проекты</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="section services">
+        <div class="container">
+          <h2 class="main-subtitle">Наши услуги</h2>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+  </div>
 </body>
 
 </html>
