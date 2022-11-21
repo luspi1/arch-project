@@ -8,8 +8,6 @@
   }
 
 
-
-
   &__inner {
     max-width: 705px;
     padding-top: 90px;
@@ -31,6 +29,7 @@
       line-height: 36px;
     }
   }
+
   &__description {
     margin-top: 40px;
     @include cormorant-regular;
@@ -49,6 +48,7 @@
     line-height: 31px;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       background-color: #3F888F;
     }
@@ -56,9 +56,97 @@
 }
 
 
-
-
-
 .services {
   padding: 65px 0;
+}
+
+.contact-us {
+
+  .main-subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__choice {
+    width: 48%;
+  }
+
+  &__choice-controllers {
+    display: flex;
+  }
+
+  &__choice-btn {
+    @include cormorant-bold;
+    font-size: 32px;
+    line-height: 39px;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 6px 0;
+    border: none;
+    border-radius: 30px;
+    background: $gray-bg;
+    color: $text-green;
+
+    &.contact-us__choice-btn_active {
+      background: $green;
+      color: $white;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        right: -20px;
+        width: 40px;
+        z-index: -1;
+        height: 51px;
+        top: 50%;
+        background: $gray-bg;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__choice-item {
+    display: none;
+
+    &.contact-us__choice-item_active {
+      display: block;
+    }
+  }
+
+  &__choice-img {
+    margin-bottom: 10px;
+  }
+
+  &__choice-address {
+    text-align: center;
+    color: $dark-green;
+  }
+
+
+  &__form {
+    width: 48%;
+  }
+
+  .checkbox-content {
+    margin-bottom: 40px;
+  }
+
+  &__form-btn {
+    @include ptsans-bold;
+    color: $white;
+    padding: 18px 49px;
+    background: #709DA0;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background: $green;
+    }
+  }
+
 }

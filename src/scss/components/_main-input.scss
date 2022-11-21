@@ -1,0 +1,42 @@
+.main-input {
+  width: 100%;
+  margin-bottom: 16px;
+  &__label {
+    position: relative;
+  }
+
+  &__input {
+    background: $gray-bg;
+    padding: 14px 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $green;
+    font-size: 18px;
+
+
+    &:focus  {
+      outline: 1px solid $light-green;
+      background: $white;
+    }
+    &:focus ~ .main-input__placeholder{
+      font-size: 14px;
+      top: -13px;
+      left: 10px;
+      background: #ffffff;
+      padding: 0 10px;
+    }
+
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    color: $light-green;
+    font-size: 18px;
+    line-height: 23px;
+    transition: all .3s;
+  }
+}
