@@ -64,7 +64,9 @@
 
 .services {
   padding: 75px 0 0;
-
+  .main-subtitle {
+    text-align: center;
+  }
   .swiper-services {
     margin-top: 45px;
 
@@ -85,6 +87,7 @@
     width: 62px;
     height: 62px;
     top: 35%;
+
     &:hover {
       svg {
         path {
@@ -94,14 +97,17 @@
       }
     }
   }
+
   .swiper-image {
     margin: auto;
     max-width: 910px;
     position: relative;
+
     img {
       width: 100%;
     }
   }
+
   .swiper-subtitle {
     width: 667px;
     min-height: 90px;
@@ -138,7 +144,7 @@
 
     li {
       list-style: disc;
-      text-align: left;
+      text-align: center;
     }
 
     &::before {
@@ -158,6 +164,7 @@
   background-image: url('../img/maps.png');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   min-height: 910px;
   padding-top: 20px;
 
@@ -299,7 +306,7 @@
 
   .container {
     padding-top: 48px;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
   }
 
   &__title {
@@ -307,6 +314,7 @@
     color: $dark-green;
     font-size: 43px;
     line-height: 52px;
+    text-align: center;
   }
 
   .swiper-command {
@@ -347,6 +355,7 @@
     margin-top: 5px;
     font-size: 16px;
     line-height: 21px;
+    text-align: center;
   }
 
   .swiper-button-next,
@@ -376,8 +385,140 @@
   }
 }
 
-.contact-us {
 
+.projects {
+  .container {
+    padding-top: 65px;
+    padding-bottom: 100px;
+  }
+
+  .main-subtitle {
+    text-align: center;
+  }
+
+  .swiper-projects {
+    margin-top: 41px;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {
+    max-width: 760px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .swiper-image {
+    width: 740px;
+    margin: auto;
+  }
+
+  .swiper-title {
+    @include cormorant-bold;
+    color: $black;
+    font-size: 140px;
+    line-height: 170px;
+  }
+
+  .swiper-date {
+    margin-top: 30px;
+    @include cormorant-regular;
+    color: $text-green;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .swiper-description {
+    margin-top: 20px;
+    color: $dark-green;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 61px;
+    height: 61px;
+    top: 25%;
+
+    &:hover {
+      svg {
+        path {
+          transition: all .3s;
+          stroke: $dark-green;
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 0;
+  }
+}
+
+.clients {
+  background-color: #304C5A;
+
+  .container {
+    padding-top: 13px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    @include cormorant-bold;
+    color: $white;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .swiper-clients {
+    margin-top: 15px;
+    padding: 0 50px;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    transition: all .3s;
+    &:hover {
+      svg {
+        path {
+          transition: all .3s;
+          fill: $dark-green;
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 0;
+  }
+}
+
+
+.contact-us {
+  .container{
+    padding-top: 90px;
+  }
   .main-subtitle {
     text-align: center;
     margin-bottom: 50px;
@@ -412,6 +553,7 @@
       background: $green;
       color: $white;
       position: relative;
+
       &::after {
         position: absolute;
         content: '';
@@ -460,6 +602,7 @@
     border: none;
     cursor: pointer;
     transition: all .3s;
+
     &:hover {
       background: $green;
     }
