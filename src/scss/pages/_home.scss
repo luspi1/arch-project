@@ -85,6 +85,7 @@
     width: 62px;
     height: 62px;
     top: 35%;
+
     &:hover {
       svg {
         path {
@@ -94,14 +95,17 @@
       }
     }
   }
+
   .swiper-image {
     margin: auto;
     max-width: 910px;
     position: relative;
+
     img {
       width: 100%;
     }
   }
+
   .swiper-subtitle {
     width: 667px;
     min-height: 90px;
@@ -378,9 +382,11 @@
 
 .contact-us {
 
+  padding: 95px 0 95px;
+
   .main-subtitle {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &__inner {
@@ -389,7 +395,7 @@
   }
 
   &__choice {
-    width: 48%;
+    width: 49%;
   }
 
   &__choice-controllers {
@@ -401,28 +407,38 @@
     font-size: 32px;
     line-height: 39px;
     width: 50%;
-    margin-bottom: 16px;
     padding: 6px 0;
     border: none;
     border-radius: 30px;
     background: $gray-bg;
     color: $text-green;
+    cursor: pointer;
+    transition: all .3s;
 
-    &.contact-us__choice-btn_active {
-      background: $green;
-      color: $white;
+    &:hover {
+      color: $green;
+    }
+
+    &:first-child {
       position: relative;
+
       &::after {
         position: absolute;
         content: '';
-        right: -20px;
         width: 40px;
+        right: -20px;
         z-index: -1;
         height: 51px;
         top: 50%;
         background: $gray-bg;
         transform: translateY(-50%);
       }
+    }
+
+    &.contact-us__choice-btn_active {
+      background: $green;
+      color: $white;
+      pointer-events: none;
     }
   }
 
@@ -435,7 +451,8 @@
   }
 
   &__choice-img {
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
 
   &__choice-address {
@@ -445,24 +462,65 @@
 
 
   &__form {
-    width: 48%;
-  }
-
-  .checkbox-content {
-    margin-bottom: 40px;
+    width: 48.5%;
   }
 
   &__form-btn {
     @include ptsans-bold;
     color: $white;
-    padding: 18px 49px;
+    padding: 20px 53px;
     background: #709DA0;
     border: none;
     cursor: pointer;
     transition: all .3s;
+    margin-top: 40px;
+
     &:hover {
       background: $green;
     }
   }
 
+  .custom-checkbox {
+    margin-top: 10px;
+  }
+
+
+}
+
+.license {
+  padding: 35px 0 20px;
+  background-color: $gray-bg;
+
+  .secondarily-subtitle {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    background-color: $white;
+    padding: 24px 19px 15px;
+    width: 32%;
+    margin-bottom: 15px;
+
+
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    h4 {
+      @include cormorant-bold;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      margin-bottom: 23px;
+      color: $text-green;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
 }

@@ -412,15 +412,17 @@
             <div class="contact-us__choice-controllers">
               <button
                 class="contact-us__choice-btn contact-us__choice-btn_active"
-                type="button">
+                type="button" data-tab="tambov">
                 Тамбов
               </button>
-              <button class="contact-us__choice-btn" type="button">
+              <button class="contact-us__choice-btn" type="button"
+                      data-tab="novgorod">
                 Н. Новгород
               </button>
             </div>
             <div
-              class="contact-us__choice-item contact-us__choice-item_active">
+              class="contact-us__choice-item contact-us__choice-item_active"
+              data-tab="tambov">
               <div class="contact-us__choice-img">
                 <img src="img/contact-us-1.jpg" alt="Тамбов">
               </div>
@@ -430,54 +432,90 @@
                 тел.: +7(4752)-55-92-97
               </p>
             </div>
-            <div class="contact-us__choice-item">
+            <div class="contact-us__choice-item" data-tab="novgorod">
               <div class="contact-us__choice-img">
                 <img src="img/contact-us-1.jpg" alt="Н. Новгород">
               </div>
               <p class="contact-us__choice-address">
                 603000, город Нижний Новгород, Большая Покровская, дом 10, 1
-                этаж
-                e-mail: post@arh-pro.com
+                этаж <br>
+                e-mail: post@arh-pro.com <br>
                 тел.: +7(4752)-55-92-97
               </p>
             </div>
-
-
-
           </div>
           <form class="contact-us__form" action="#" method="post">
             @include('partials/main-input.html', {
             'type': 'text',
-            'placeholder': 'Имя'
+            'placeholder': 'Имя',
+            'name': 'name',
+            'attr': 'required'
             })
 
             @include('partials/main-input.html', {
             'type': 'text',
-            'placeholder': 'Фамилия'
+            'placeholder': 'Фамилия',
+            'name': 'secondName',
+            'attr': 'required'
             })
 
             @include('partials/main-input.html', {
             'type': 'text',
-            'placeholder': 'Телефон'
+            'placeholder': 'Телефон',
+            'name': 'phone',
+            'add-class-input': 'phone-mask'
             })
 
             @include('partials/main-textarea.html', {
-            'placeholder': 'Ваше сообщение'
+            'name': 'message',
+            'placeholder': 'Ваше сообщение',
+            'attr': 'required'
             })
 
-            <div class="checkbox-content">
-              <input type="checkbox" name="concent">
-              <p>Нажимая кнопку «Отправить», я даю свое согласие на
-                обработку моих персональных данных, в соответствии с
-                Федеральным законом от 27.07.2006 года №152-ФЗ «О
-                персональных данных», на условиях и для целей, определенных
-                в Согласии на обработку персональных данных *</p>
+            <div class="custom-checkbox">
+              <input type="checkbox" id="contact_consent" name="contactConsent" required>
+              <label for="contact_consent">Нажимая кнопку «Отправить», я даю
+                свое согласие на обработку моих персональных данных, в
+                соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+                персональных данных», на условиях и для целей, определенных в
+                Согласии на обработку персональных данных *</label>
             </div>
-
             <button class="contact-us__form-btn" type="submit">Отправить
             </button>
           </form>
         </div>
+      </div>
+    </section>
+    <section class="section license">
+      <div class="container">
+        <h3 class="secondarily-subtitle">Лицензии и СРО</h3>
+        <ul class="license__list">
+          <li class="license__list-item">
+            <h4>ЛИЦЕНЗИЯ № МКРФ 22146</h4>
+            <p>
+              ЛИЦЕНЗИЯ № МКРФ 22146 от 30.03.2022 г.(на осуществление
+              деятельности по сохранению объектов культурного наследия
+              (памятников истории и культуры) народов Российской Федерации)
+            </p>
+          </li>
+          <li class="license__list-item">
+            <h4>СРО-П-161-09092010</h4>
+            <p>
+              Регистрационный номер в государственном реестре саморегулируемых
+              организаций СРО-П-161-09092010 (Ассоциация СРО «МРП»)
+            </p>
+          </li>
+          <li class="license__list-item">
+            <h4>СРО-С-058-03112009</h4>
+            <p>
+              Регистрационный номер в государственном реестре саморегулируемых
+              организаций СРО-С-058-03112009 (Ассоциация СРО «Тамбовские
+              строители»)
+            </p>
+          </li>
+        </ul>
+
+
       </div>
     </section>
 

@@ -73,3 +73,11 @@ select::-ms-expand {
   line-height: 82px;
   color: $black;
 }
+
+.secondarily-subtitle {
+  text-align: center;
+  @include cormorant-bold;
+  font-size: 43px;
+  line-height: 52px;
+  color: #1C3643;
+}
