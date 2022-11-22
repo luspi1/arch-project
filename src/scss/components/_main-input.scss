@@ -1,6 +1,7 @@
 .main-input {
   width: 100%;
   margin-bottom: 16px;
+
   &__label {
     position: relative;
   }
@@ -14,17 +15,18 @@
     color: $green;
     font-size: 18px;
 
+    &.main-input_active ~ .main-input__placeholder{
+        font-size: 14px;
+        top: -13px;
+        left: 10px;
+        background: #ffffff;
+        padding: 0 10px;
+    }
 
-    &:focus  {
+
+    &:focus {
       outline: 1px solid $light-green;
       background: $white;
-    }
-    &:focus ~ .main-input__placeholder{
-      font-size: 14px;
-      top: -13px;
-      left: 10px;
-      background: #ffffff;
-      padding: 0 10px;
     }
 
   }
