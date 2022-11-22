@@ -161,8 +161,16 @@
     position: relative;
 
     li {
-      list-style: disc;
       text-align: center;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #77868E;
+        transform: translate(-7px, -50%);
+      }
     }
 
     &::before {
