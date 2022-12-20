@@ -5,7 +5,12 @@
 
   .maps {
     background-size: cover;
-    background-position-x: left;
+  }
+}
+
+@media (max-width: 1200px) {
+  .maps {
+    background-position-x: 26%;
   }
 }
 
@@ -13,9 +18,11 @@
   .header {
     background-position-x: left;
   }
+
   .header__title {
     font-size: 50px;
   }
+
   .features .swiper-button-block,
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next,
@@ -45,13 +52,27 @@
     padding-bottom: 25px;
   }
 
-  .projects .swiper-image {
+  .projects .swiper-title-wrapper {
+    position: static;
+    transform: translateX(0);
     width: 100%;
+    padding-top: 15px;
   }
-  .projects .swiper-title {
-    font-size: 90px;
-    line-height: 120px;
+
+  .projects .swiper-title::after {
+    margin: 15px auto 5px;
   }
+
+  .projects .swiper-date {
+    margin-bottom: 15px;
+  }
+
+  .projects .swiper-image {
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
   .clients .swiper-clients {
     padding-bottom: 25px;
   }
@@ -63,7 +84,6 @@
   .contact-us .main-subtitle {
     margin-bottom: 30px;
   }
-
 
   .contact-us__choice-btn {
     font-size: 25px;
@@ -92,7 +112,11 @@
   }
 }
 
-
+@media (max-width: 992px) {
+  .maps {
+    background-position-x: 32%;
+  }
+}
 
 @media (max-width: 768px) {
   .services .swiper-subtitle {
@@ -105,27 +129,32 @@
     margin-top: 0;
   }
 
+  .maps {
+    background-position-x: 0;
+    background-size: 350%;
+  }
   .maps .container {
     align-items: center;
   }
+
   .maps__description {
     max-width: 330px;
     font-size: 26px;
   }
+
   .features .container {
     padding-bottom: 20px;
   }
+
   .features .swiper-desc {
     font-size: 26px;
   }
 
-  .projects .swiper-title {
-    font-size: 60px;
-    line-height: 80px;
-  }
+
   .projects .swiper-date {
     margin-top: 20px;
   }
+
   .contact-us__inner {
     flex-direction: column;
     align-items: center;
@@ -165,41 +194,48 @@
     font-size: 40px;
     line-height: 50px;
   }
+
   .header__title span,
   .header__description {
     font-size: 22px;
   }
+
   .header__link {
     font-size: 18px;
   }
+
   .maps,
   .maps .container {
     min-height: 650px;
   }
+
   .features .container {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .features .swiper-features {
     padding-right: 0;
   }
+
   .features .swiper-border {
     padding: 20px;
   }
+
   .features .swiper-features::before {
     display: none;
   }
+
   .features .swiper-slide {
     padding: 0;
   }
-  .projects .swiper-title {
-    font-size: 50px;
-    line-height: 60px;
-  }
+
 }
 
 @media (max-width: 400px) {
-  .maps, .maps .container {
+
+  .maps,
+  .maps .container {
     min-height: 440px;
   }
 }

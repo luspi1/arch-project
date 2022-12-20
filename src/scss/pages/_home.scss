@@ -4,13 +4,13 @@
   min-height: 880px; //временно
 
   .main-menu {
-    margin-top: 10px;
+    margin-top: 25px;
   }
 
 
   &__inner {
     max-width: 705px;
-    padding-top: 90px;
+    padding-top: 100px;
     text-align: left;
     color: $white;
 
@@ -141,10 +141,11 @@
     z-index: 5;
 
     h3 {
-      max-width: 446px;
+      max-width: 455px;
       @include cormorant-regular;
       font-size: 32px;
       line-height: 34px;
+      font-weight: 700;
       text-align: center;
       color: $dark-green;
     }
@@ -154,33 +155,22 @@
     max-width: 710px;
     margin: 47px auto 0;
     padding: 20px 0 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 
     li {
-      text-align: center;
-      &::before {
-        content: '';
-        display: inline-block;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: #77868E;
-        transform: translate(-7px, -50%);
-      }
+      color: $dark-green;
     }
 
     &::before {
       content: '';
-      display: flex;
+      display: block;
       position: absolute;
       width: 226px;
       height: 1px;
       background-color: #A8B6BD;
       top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
@@ -199,13 +189,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .main-subtitle {
-
     text-align: left;
-
   }
 
   &__description {
@@ -342,7 +329,7 @@
 
   .swiper-command {
     margin-top: 36px;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .swiper-wrapper {
@@ -358,8 +345,8 @@
   }
 
   .swiper-image {
-    width: 130px;
-    height: 130px;
+    width: 170px;
+    height: 170px;
 
     img {
       width: 100%;
@@ -368,7 +355,7 @@
   }
 
   .swiper-title {
-    margin-top: 15px;
+    margin-top: 25px;
     @include cormorant-bold;
     color: $dark-green;
     font-size: 25px;
@@ -412,8 +399,8 @@
 
 .projects {
   .container {
-    padding-top: 65px;
-    padding-bottom: 100px;
+    padding-top: 85px;
+    padding-bottom: 120px;
   }
 
   .main-subtitle {
@@ -421,7 +408,7 @@
   }
 
   .swiper-projects {
-    margin-top: 41px;
+    margin-top: 50px;
   }
 
   .swiper-wrapper {
@@ -429,25 +416,42 @@
   }
 
   .swiper-slide {
-    max-width: 760px;
+    max-width: 910px;
     margin: auto;
     text-align: center;
   }
 
   .swiper-image {
-    width: 740px;
-    margin: auto;
+    height: 493px;
+    margin: 0 auto 135px;
+     
   }
-
+  .swiper-title-wrapper {
+    width: 677px;
+    padding-top: 36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85px;
+    background-color: $white;
+  }
   .swiper-title {
     @include cormorant-bold;
-    color: $black;
-    font-size: 140px;
-    line-height: 170px;
+    color: $dark-green;
+    font-size: 32px;
+    line-height: 34px;
+    text-align: center;
+    &::after {
+      content: '';
+      display: block;
+      width: 150px;
+      height: 1px;
+      background-color: $gray;
+      margin: 28px auto;
+    }
   }
 
   .swiper-date {
-    margin-top: 30px;
     @include cormorant-regular;
     color: $text-green;
     font-size: 26px;
@@ -455,7 +459,7 @@
   }
 
   .swiper-description {
-    margin-top: 20px;
+   
     color: $dark-green;
   }
 
@@ -463,7 +467,7 @@
   .swiper-button-prev {
     width: 61px;
     height: 61px;
-    top: 25%;
+    top: 35%;
 
     &:hover {
       svg {
@@ -490,11 +494,12 @@
   background-color: #304C5A;
 
   .container {
-    padding-top: 13px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   &__title {
+    margin-bottom: 25px;
     @include cormorant-bold;
     color: $white;
     font-size: 32px;
@@ -503,17 +508,22 @@
   }
 
   .swiper-clients {
-    margin-top: 15px;
     padding: 0 50px;
   }
 
   .swiper-wrapper {
     box-sizing: border-box;
   }
-
+  .swiper-slide {
+    
+    min-width: 225px;
+    width: 225px;
+    height: 225px;
+  }
   .swiper-slide img {
     display: block;
     margin: auto;
+
   }
 
   .swiper-button-next,
@@ -527,7 +537,7 @@
       svg {
         path {
           transition: all .3s;
-          fill: $dark-green;
+          fill: $gray;
         }
       }
     }
@@ -545,7 +555,7 @@
 }
 
 .contact-us {
-  padding: 85px 0 95px;
+  padding: 80px 0 95px;
 
   .main-subtitle {
     text-align: center;
@@ -652,7 +662,7 @@
 }
 
 .license {
-  padding: 35px 0 20px;
+  padding: 30px 0 20px;
   background-color: $gray-bg;
 
   .secondarily-subtitle {
