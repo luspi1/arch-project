@@ -2,8 +2,8 @@ import { Swiper } from "swiper/bundle";
 
 const swiperServices = new Swiper(".swiper-services", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".services-swiper-button-next",
+    prevEl: ".services-swiper-button-prev",
   },
   spaceBetween: 20,
   pagination: {
@@ -14,8 +14,8 @@ const swiperServices = new Swiper(".swiper-services", {
 
 const swiperFeatures = new Swiper(".swiper-features", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".features-swiper-button-next",
+    prevEl: ".features-swiper-button-prev",
   },
   slidesPerView: 1,
   spaceBetween: 50,
@@ -26,11 +26,11 @@ const swiperFeatures = new Swiper(".swiper-features", {
 
 const swiperCommand = new Swiper(".swiper-command", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".command-swiper-button-next",
+    prevEl: ".command-swiper-button-prev",
   },
   slidesPerView: 1,
-  spaceBetween: 25,
+  spaceBetween: 55,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -49,8 +49,8 @@ const swiperCommand = new Swiper(".swiper-command", {
 
 const swiperProjects = new Swiper(".swiper-projects", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".projects-swiper-button-next",
+    prevEl: ".projects-swiper-button-prev",
   },
   spaceBetween: 350,
   slidesPerView: "auto",
@@ -62,28 +62,26 @@ const swiperProjects = new Swiper(".swiper-projects", {
 
 const swiperClients = new Swiper(".swiper-clients", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".clients-swiper-button-next",
+    prevEl: ".clients-swiper-button-prev",
   },
   slidesPerView: 1,
-  spaceBetween: 70,
+  spaceBetween: 50,
   pagination: {
     el: ".swiper-pagination",
   },
   breakpoints: {
+    
     768: {
-      slidesPerView: 3,
-      spaceBetween: 52,
+      slidesPerView: 2,
+      
     },
-    1024: {
-      slidesPerView: 4,
+    992: {
+      slidesPerView: 3,
     },
     1200: {
-      slidesPerView: 5,
-    },
-    1400: {
-      slidesPerView: 6,
-    },
+      slidesPerView: 4,
+    }
   },
 });
 
