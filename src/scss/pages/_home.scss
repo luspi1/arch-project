@@ -70,7 +70,7 @@
   background: $green;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -424,8 +424,9 @@
   .swiper-image {
     height: 493px;
     margin: 0 auto 135px;
-     
+
   }
+
   .swiper-title-wrapper {
     width: 677px;
     padding-top: 36px;
@@ -435,12 +436,14 @@
     bottom: 85px;
     background-color: $white;
   }
+
   .swiper-title {
     @include cormorant-bold;
     color: $dark-green;
     font-size: 32px;
     line-height: 34px;
     text-align: center;
+
     &::after {
       content: '';
       display: block;
@@ -459,7 +462,7 @@
   }
 
   .swiper-description {
-   
+
     color: $dark-green;
   }
 
@@ -514,12 +517,14 @@
   .swiper-wrapper {
     box-sizing: border-box;
   }
+
   .swiper-slide {
-    
+
     min-width: 225px;
     width: 225px;
     height: 225px;
   }
+
   .swiper-slide img {
     display: block;
     margin: auto;
