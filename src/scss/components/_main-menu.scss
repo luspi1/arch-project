@@ -7,15 +7,86 @@
   @media (max-width: 768px) {
     padding-left: 150px;
   }
+
+  .burger-btn {
+    display: none;
+    position: relative;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    span,
+    &::before,
+    &::after {
+      right: 0;
+      position: absolute;
+      height: 3px;
+      transition: all 0.3s ease 0s;
+      background-color: #709DA0;
+    }
+
+    &::before,
+    &::after,
+    span {
+      content: "";
+      width: 100%;
+
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+
+    &._active {
+      span,
+      &::before,
+      &::after {
+        background-color: #ffffff;
+      }
+
+      span {
+        transform: scale(0) translate(0px, -50%);
+      }
+    }
+
+    &._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    &._active::after {
+      width: 100%;
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
+  }
+
   &__logo {
     width: 200px;
     height: 92px;
     position: absolute;
     left: 0;
     top: -70px;
+
     a {
       display: block;
     }
+
     @media (max-width: 992px) {
       width: 140px;
       height: 70px;
@@ -26,20 +97,42 @@
     }
   }
 
+
   &__navigation {
+    position: relative;
     ul {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+
       @media (max-width: 768px) {
-        justify-content: space-around;
+        position: fixed;
+        top: 170px;
+        height: 100vh;
+        min-width: 100%;
+        background-color: #264859;
+        border: none;
+        z-index: 5;
+        right: -105%;
+        transition: right 0.3s ease 0s;
+        flex-direction: column;
+        padding-top: 10%;
+
+        &._active {
+          right: 0;
+        }
       }
+
 
       li {
         &:not(:last-child) {
           margin-right: 50px;
           @media (max-width: 1024px) {
             margin-right: 20px;
+          }
+          @media (max-width: 768px) {
+            margin-right: 0;
+            margin-bottom: 20px;
           }
         }
 
@@ -51,6 +144,9 @@
 
           @media (max-width: 1024px) {
             font-size: 16px;
+          }
+          @media (max-width: 768px) {
+            font-size: 20px;
           }
         }
 

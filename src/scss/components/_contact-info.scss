@@ -45,6 +45,40 @@
     }
   }
 
+  &__phone-item {
+    position: relative;
+
+    &:hover .contact-info__extra-phone {
+      display: inline-block;
+    }
+
+    a {
+      color: #A8B6BD;
+    }
+
+    .contact-info__extra-phone {
+      display: none;
+      position: absolute;
+      bottom: -55px;
+      border-radius: 5px;
+      padding: 0 4px 0 4px;
+      background: white;
+      left: 0;
+      width: 160px;
+      color: #000000;
+
+      &::before {
+        content: '';
+        top: -5px;
+        width: 100%;
+        position: absolute;
+        height: 10px;
+        background: transparent;
+      }
+    }
+
+  }
+
   &__list-socials {
     padding-top: 5px;
 

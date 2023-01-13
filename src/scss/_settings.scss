@@ -17,6 +17,9 @@ body {
   line-height: 26px;
   color: $light-green;
   position: relative;
+  &._lock {
+    overflow-y: hidden;
+  }
 }
 
 ul,
