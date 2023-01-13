@@ -64,20 +64,20 @@ const swiperClients = new Swiper('.swiper-clients', {
 		nextEl: '.clients-swiper-button-next',
 		prevEl: '.clients-swiper-button-prev',
 	},
-	slidesPerView: 1,
-	spaceBetween: 50,
-	pagination: {
-		el: '.swiper-pagination',
-	},
-	breakpoints: {
-		768: {
-			slidesPerView: 2,
-		},
-		992: {
-			slidesPerView: 3,
-		},
-		1200: {
-			slidesPerView: 4,
-		},
-	},
+  slidesPerView: 1,
+  spaceBetween: 55,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
 })
