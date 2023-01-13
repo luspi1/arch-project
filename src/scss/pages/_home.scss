@@ -417,13 +417,14 @@
 
   .swiper-slide {
     max-width: 910px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
   }
 
   .swiper-image {
     height: 493px;
-    margin: 0 auto 135px;
+    margin: 0 auto 100px;
+    position: relative;
 
   }
 
@@ -433,7 +434,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 85px;
+    bottom: -75px;
     background-color: $white;
   }
 
@@ -462,7 +463,7 @@
   }
 
   .swiper-description {
-
+    text-align: left;
     color: $dark-green;
   }
 
@@ -494,55 +495,60 @@
 }
 
 .clients {
-  background-color: #304C5A;
+  background-color: #F6F6F6;
 
   .container {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 
   &__title {
-    margin-bottom: 25px;
     @include cormorant-bold;
-    color: $white;
-    font-size: 32px;
-    line-height: 39px;
+    color: $dark-green;
+    font-size: 43px;
+    line-height: 52px;
     text-align: center;
   }
 
   .swiper-clients {
+    margin-top: 36px;
     padding: 0 50px;
   }
 
-  .swiper-wrapper {
-    box-sizing: border-box;
+ .swiper-image {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+    }
   }
 
-  .swiper-slide {
-
-    min-width: 225px;
-    width: 225px;
-    height: 225px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    margin: auto;
-
+  .swiper-title {
+    margin-top: 25px;
+    @include cormorant-bold;
+    color: $dark-green;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 42px;
-    height: 42px;
-    top: 50%;
-    transition: all .3s;
+    width: 53px;
+    height: 53px;
+
+
 
     &:hover {
       svg {
         path {
           transition: all .3s;
-          fill: $gray;
+          fill: $dark-green;
         }
       }
     }
@@ -557,6 +563,7 @@
   .swiper-rtl .swiper-button-prev {
     right: 0;
   }
+
 }
 
 .contact-us {
