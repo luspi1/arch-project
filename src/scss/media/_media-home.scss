@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header {
+ .header {
     background-position-x: left;
   }
 
@@ -52,12 +52,13 @@
     padding-bottom: 25px;
   }
 
-  .projects .swiper-title-wrapper {
-    position: static;
-    transform: translateX(0);
-    width: 100%;
-    padding-top: 15px;
-  }
+
+
+
+
+
+
+
 
   .projects .swiper-title::after {
     margin: 15px auto 5px;
@@ -67,11 +68,7 @@
     margin-bottom: 15px;
   }
 
-  .projects .swiper-image {
-    margin-bottom: 0;
-    width: 100%;
-    height: auto;
-  }
+
 
   .clients .swiper-clients {
     padding-bottom: 25px;
