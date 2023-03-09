@@ -1,5 +1,5 @@
 @media (max-width: 1500px) {
-  .header {
+  .header.home-header {
     background-position-x: center;
   }
 
@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header {
+  .header.home-header {
     background-position-x: left;
   }
 
