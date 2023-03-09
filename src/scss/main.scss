@@ -4,6 +4,7 @@
 
 //Страницы
 @import "./pages/home";
+@import "./pages/job-request";
 
 //Компоненты
 @import "./components/contact-info";
@@ -12,6 +13,7 @@
 @import "./components/main-textarea";
 @import "./components/custom-checkbox";
 @import "./components/footer";
+@import "./components/info-modal";
 
 //Медиа запросы
 @import "./media/media-home";

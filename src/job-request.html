@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html', { 'title': 'Заявка на работу' })
+<body class="page__body job-request-page">
+<div class="site-container">
+  <div class="header">
+    <div class="container">
+      @include('partials/contact-info.html')
+      @include('partials/main-menu.html')
+    </div>
+  </div>
+  <main class="main job-request-page__main">
+    <section class="section">
+      <div class="container">
+        <div class="job-request-page__top">
+          <a href="#">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 15.2L0 7.8999L7 0.5L7.69995 1.19995L1.40002 7.8999L7.69995 14.5999L7 15.2Z"
+                fill="#A8B6BD"/>
+              <path d="M13.0996 7.3999H0.599609V8.3999H13.0996V7.3999Z"
+                    fill="#A8B6BD"/>
+            </svg>
+            все вакансии
+          </a>
+          <h1>
+            Заявка на работу
+          </h1>
+        </div>
+        <div class="job-request-page__form">
+          <form action="#">
+            <div class="main-input">
+              <label class="main-input__label">
+                <input class="main-input__input" type="text" name="name"
+                       required>
+                <span class="main-input__placeholder">Имя*</span>
+              </label>
+            </div>
+            <div class="main-input">
+              <label class="main-input__label">
+                <input class="main-input__input" type="text" name="lastname"
+                       required>
+                <span class="main-input__placeholder">Фамилия*</span>
+              </label>
+            </div>
+            <div class="main-input">
+              <label class="main-input__label">
+                <input class="main-input__input phone-mask" type="text"
+                       name="phone"
+                       required>
+                <span class="main-input__placeholder">Телефон*</span>
+              </label>
+            </div>
+            <div class="main-input">
+              <label class="main-input__label">
+                <input class="main-input__input phone-mask" type="email"
+                       name="email">
+                <span class="main-input__placeholder">E-mail</span>
+              </label>
+            </div>
+            <div class="main-select-wrapper job-request-page__select-wrapper">
+              <select class="main-select" name="career_objective"
+                      id="careerObjective" data-select="main-select">
+                <option value="architect">Архитектор</option>
+                <option value="engineer">Инженер</option>
+                <option value="foreman">Прораб</option>
+              </select>
+            </div>
+            <div class="main-input">
+              <label class="main-input__label">
+                <input class="main-input__input phone-mask" type="text"
+                       name="education"
+                       required>
+                <span class="main-input__placeholder">Образование*</span>
+              </label>
+            </div>
+            <div class="job-request-page__file main-file-input">
+              <h4>Резюме для соискателей</h4>
+              <label class="main-file-input__text-wrapper">
+                <span class="main-file-input__text">
+                  Выбрать файл
+                </span>
+                <input type="file" name="file-resume">
+                <button class="main-file-input__delete-btn" type="reset">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.8216 9.69189L6.54054 5.4108L10.8216 1.12975C11.0594 0.891913 11.0594 0.416216 10.8216 0.178378C10.5837 -0.0594594 10.1082 -0.0594594 9.87032 0.178378L5.58927 4.45946L1.30808 0.178378C1.07024 -0.0594594 0.594681 -0.0594594 0.237925 0.178378C0.119006 0.297297 0 0.416209 0 0.654046C0 0.891884 0.119006 1.0108 0.237925 1.24864L4.51897 5.52973L0.237925 9.81081C8.70952e-05 10.0486 8.70952e-05 10.5243 0.237925 10.7621C0.356844 10.8811 0.475646 11 0.713484 11C0.951322 11 1.07027 10.8811 1.18919 10.7621L5.47024 6.4811L9.75143 10.7621C9.87035 10.8811 10.1081 11 10.227 11C10.4648 11 10.5838 10.8811 10.7027 10.7621C11.0595 10.2865 11.0594 9.92972 10.8216 9.69189Z"
+                      fill="#1C3643"/>
+                  </svg>
+                </button>
+
+              </label>
+            </div>
+
+            <div class="custom-checkbox">
+              <input type="checkbox" id="resume_consent" name="resumeConsent"
+                     required/>
+              <label for="resume_consent">
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку
+                моих
+                персональных
+                данных, в соответствии с Федеральным законом от 27.07.2006 года
+                №152-ФЗ «О
+                персональных данных», на условиях и для целей, определенных в
+                Согласии на
+                обработку персональных данных *</label
+              >
+            </div>
+            <button class="main-submit-btn job-request-page__submit-btn" type="submit">Отправить
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+      @include('partials/info-modal.html')
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+</div>
+</body>
+</html>

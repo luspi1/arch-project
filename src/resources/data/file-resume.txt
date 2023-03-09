@@ -1,0 +1,2 @@
+{"status": "ok", "errortext": "Произошла ошибка!", "id_person_resume": "testid123"}
+
