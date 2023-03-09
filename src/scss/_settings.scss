@@ -17,6 +17,7 @@ body {
   line-height: 26px;
   color: $light-green;
   position: relative;
+
   &._lock {
     overflow-y: hidden;
   }
@@ -72,6 +73,10 @@ select::-ms-expand {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main-subtitle {
   @include cormorant-bold;
   font-size: 68px;
@@ -117,7 +122,7 @@ select::-ms-expand {
     display: none;
   }
 
-  @media (max-width:1400px) {
+  @media (max-width: 1400px) {
     right: 50px;
   }
 
@@ -125,3 +130,141 @@ select::-ms-expand {
     right: 20px;
   }
 }
+
+.main-select-wrapper {
+
+  .choices__inner {
+    background-color: #fff;
+    border: 1px solid #77868E;
+  }
+
+  .choices__list--single .choices__item {
+    width: 100%;
+    color: #3F888F;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+    @include ptsans-regular;
+    font-size: 18px;
+    line-height: 23px;
+    color: #77868E;
+  }
+
+
+  .choices[data-type*=select-one]::after {
+    height: 9px;
+    width: 18px;
+    background: url("../img/select-arrow.svg") no-repeat center;
+  }
+
+  .choices[data-type*=select-one].is-open::after {
+    margin-top: -2.5px;
+    transform: rotate(180deg);
+  }
+
+  .choices[data-type*=select-one]::after {
+    border-style: none;
+  }
+
+
+}
+
+.dz-details,
+.dz-progress,
+.dz-error-message,
+.dz-success-mark,
+.dz-error-mark {
+  display: none !important;
+}
+
+.dz-message {
+  button {
+    padding: 0;
+  }
+}
+
+.dz-remove {
+  line-height: 0;
+  font-size: 0;
+}
+
+.dz-preview:not(.dz-preview.dz-processing) {
+  display: none;
+}
+
+
+.main-file-input {
+  input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  &__delete-btn {
+    border: none;
+    background: none;
+    display: none;
+    cursor: pointer;
+    svg {
+      pointer-events: none;
+    }
+  }
+
+
+  &__text-wrapper {
+    @include ptsans-regular;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 4px 12px;
+    border: 1px solid #77868E;
+    border-radius: 3px;
+    transition: all .3s;
+    color: #77868E;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      color: #1C3643;
+      border-color: #1C3643;
+    }
+
+    &._file-active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border: 1px solid #1C3643;
+      @include ptsans-bold;
+      color: #1C3643;
+
+      .main-file-input__delete-btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.main-submit-btn {
+  @include ptsans-bold;
+  color: $white;
+  padding: 20px 53px;
+  background: #709DA0;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 40px;
+
+
+  &:hover {
+    background: $green;
+  }
+}
+
+
+
+
