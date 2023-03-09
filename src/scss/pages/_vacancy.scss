@@ -1,15 +1,12 @@
 .vacancy-page {
   .header {
-    min-height: max-content;
-    height: 175px;
     margin-bottom: 100px;
-    background-image: none;
   }
 
   .vacancy {
     padding-bottom: 200px;
     color: $dark-green;
-
+    border-bottom: 1px solid #DFE8ED;
     .main-subtitle {
       width: 100%;
       text-align: center;

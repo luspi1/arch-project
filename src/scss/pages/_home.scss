@@ -1,7 +1,10 @@
 .header {
-  background: #264859 url("../img/header-bg.jpg") no-repeat;
-  background-size: cover;
-  min-height: 880px; //временно
+
+  &.home-header {
+    background: #264859 url("../img/header-bg.jpg") no-repeat;
+    background-size: cover;
+    min-height: 880px;
+  }
 
   .main-menu {
     margin-top: 25px;

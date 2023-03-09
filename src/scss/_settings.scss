@@ -90,6 +90,12 @@ select::-ms-expand {
 
 }
 
+.header {
+  min-height: auto;
+  background: #264859;
+  padding-bottom: 50px;
+}
+
 .secondarily-subtitle {
   text-align: center;
   @include cormorant-bold;
@@ -143,6 +149,9 @@ select::-ms-expand {
     color: #3F888F;
     font-size: 18px;
     line-height: 23px;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
   }
 
   .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
@@ -150,6 +159,9 @@ select::-ms-expand {
     font-size: 18px;
     line-height: 23px;
     color: #77868E;
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
   }
 
 
@@ -227,10 +239,17 @@ select::-ms-expand {
     color: #77868E;
     cursor: pointer;
     display: inline-block;
+    height: 36px;
 
     &:hover {
       color: #1C3643;
       border-color: #1C3643;
+    }
+
+    .main-file-input__text {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     &._file-active {
@@ -246,6 +265,11 @@ select::-ms-expand {
         display: block;
       }
     }
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+
   }
 }
 
