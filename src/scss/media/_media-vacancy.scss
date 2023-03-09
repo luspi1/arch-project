@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .vacancy-page .header {
+    height: 245px;
+  }
+  .main-menu__logo {
+    top: -30px;
+  }
+  .vacancy-page .vacancy {
+    padding-bottom: 60px;
+  }
+  .vacancy-page .vacancy__top {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .vacancy-page .vacancy__top .vacancy__link-back {
+    margin-bottom: 20px;
+  }
+  .vacancy-page .vacancy__description {
+    margin-bottom: 55px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vacancy-page .vacancy__btn-feedback {
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 20px;
+  }
+}

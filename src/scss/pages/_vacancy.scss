@@ -1,0 +1,80 @@
+.vacancy-page {
+  .header {
+    min-height: max-content;
+    height: 175px;
+    margin-bottom: 100px;
+    background-image: none;
+  }
+
+  .vacancy {
+    padding-bottom: 200px;
+    color: $dark-green;
+
+    .main-subtitle {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__top {
+      display: flex;
+      margin-bottom: 48px;
+    }
+
+    &__link-back {
+      min-width: max-content;
+      display: flex;
+      align-items: center;
+      line-height: 23px;
+      color: $dark-green;
+
+      svg {
+        height: 15px;
+        margin-right: 15px;
+      }
+    }
+
+    &__description {
+      max-width: 900px;
+      margin: 0 auto 75px;
+      @include cormorant-regular;
+      font-size: 33px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    &__information {
+      max-width: 1125px;
+      margin-bottom: 40px;
+      &:last-of-type {
+        margin-bottom: 70px;
+      }
+
+    }
+
+    &__subtitle {
+      margin-bottom: 13px;
+      @include cormorant-bold;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__list {
+      padding-left: 25px;
+
+      li {
+        list-style: disc;
+      }
+    }
+    &__btn-feedback {
+      margin-bottom: 120px;
+      padding: 18px 48px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: $white;
+      background-color: #709DA0;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

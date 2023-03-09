@@ -4,7 +4,10 @@
 
 //Страницы
 @import "./pages/home";
+@import "./pages/all-vacancy";
+@import "./pages/vacancy";
 @import "./pages/job-request";
+
 
 //Компоненты
 @import "./components/contact-info";
@@ -17,3 +20,5 @@
 
 //Медиа запросы
 @import "./media/media-home";
+@import "./media/media-all-vacancy";
+@import "./media/media-vacancy";

@@ -3,9 +3,10 @@ const burgerMenu = document.querySelector('.main-menu__burger-menu')
 
 if (burgerMenuBtn) {
 	burgerMenuBtn.addEventListener('click', () => {
-		burgerMenuBtn.classList.toggle('_active')
-		burgerMenu.classList.toggle('_active')
-		document.body.classList.toggle('_lock')
+    window.scrollTo(0, 0);
+    burgerMenuBtn.classList.toggle('_active')
+    burgerMenu.classList.toggle('_active')
+    document.body.classList.toggle('_lock')
 	})
 
 	const burgerMenuLinks = burgerMenu.querySelectorAll('li')

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html', { 'title': 'Архитектор' })
+<body class="page__body vacancy-page">
+<div class="site-container">
+  <div class="header">
+    <div class="container">
+      @include('partials/contact-info.html')
+      @include('partials/main-menu.html')
+
+    </div>
+  </div>
+  <main class="main">
+    <section class="section vacancy">
+      <div class="container">
+        <div class="vacancy__top">
+          <a class="vacancy__link-back" href="all-vacancy.html">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 15.2L0 7.8999L7 0.5L7.69995 1.19995L1.40002 7.8999L7.69995 14.5999L7 15.2Z" fill="#A8B6BD"/>
+              <path d="M13.0996 7.3999H0.599609V8.3999H13.0996V7.3999Z" fill="#A8B6BD"/>
+            </svg>
+            все вакансии</a>
+          <h2 class="main-subtitle">Архитектор</h2>
+        </div>
+        <p class="vacancy__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure in ...</p>
+        <div class="vacancy__information">
+          <h4 class="vacancy__subtitle">Опыт работы:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="vacancy__information">
+          <h4 class="vacancy__subtitle">Обязанности:</h4>
+          <ul class="vacancy__list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ...
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure in ...
+            </li>
+          </ul>
+        </div>
+        <div class="vacancy__information">
+          <h4 class="vacancy__subtitle">Навыки:</h4>
+          <ul class="vacancy__list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ...
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure in ...
+            </li>
+          </ul>
+        </div>
+        <div class="vacancy__information">
+          <h4 class="vacancy__subtitle">Условия:</h4>
+          <ul class="vacancy__list">
+            <li>Официальное трудоустройство;</li>
+            <li>Комфортное проживание и 3-разовое питание за счет организации;</li>
+            <li>График: 8-часовой рабочий день, 6/1, фиксированный выходной;</li>
+            <li>Достойная оплата труда: от 2000 руб./день, заработная плата 2 раза в месяц</li>
+          </ul>
+        </div>
+        <button class="vacancy__btn-feedback" type="button">Откликнуться на вакансию</button>
+        <a class="vacancy__link-back" href="all-vacancy.html">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 15.2L0 7.8999L7 0.5L7.69995 1.19995L1.40002 7.8999L7.69995 14.5999L7 15.2Z" fill="#A8B6BD"/>
+            <path d="M13.0996 7.3999H0.599609V8.3999H13.0996V7.3999Z" fill="#A8B6BD"/>
+          </svg>
+          все вакансии</a>
+      </div>
+    </section>
+
+  </main>
+  <button class="scrollTop _hide" id="scrollTop">
+    <svg
+      width="46"
+      height="46"
+      viewBox="0 0 46 46"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="23" cy="23" r="23" fill="#709DA0"/>
+      <path
+        d="M30.2 22.3999L29.5999 23.0999L22.8999 16.6998L16.2 23.0999L15.5 22.3999L22.8999 15.2998L30.2 22.3999Z"
+        fill="white"
+        stroke="white"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M22.3999 15.8999L22.3999 28.3999L23.3999 28.3999L23.3999 15.8999L22.3999 15.8999Z"
+        fill="white"
+        stroke="white"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+
+  @include('partials/footer.html')
+</div>
+</body>
+</html>

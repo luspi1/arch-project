@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+    .all-vacancy-page .all-vacancy__card {
+    width: 49%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .all-vacancy-page .header {
+    height: 245px;
+  }
+  .all-vacancy-page .all-vacancy__card {
+    width: 100%;
+  }
+  .all-vacancy-page .all-vacancy__card a::after {
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-menu__logo {
+    top: -30px;
+  }
+}
