@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html', { 'title': 'Вакансии' })
+<body class="page__body all-vacancy-page">
+<div class="site-container">
+  <div class="header">
+    <div class="container">
+      @include('partials/contact-info.html')
+      @include('partials/main-menu.html')
+
+    </div>
+  </div>
+  <main class="main">
+    <section class="section all-vacancy">
+      <div class="container">
+        <h2 class="main-subtitle">Вакансии</h2>
+        <ul class="all-vacancy__list">
+          <li class="all-vacancy__card">
+            <a href="vacancy.html">
+              <div class="all-vacancy__image">
+                <img src="img/all-vacancy_1.jpg" alt="">
+              </div>
+              <h3 class="all-vacancy__title">Архитектор</h3>
+              <p class="all-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in ...</p>
+            </a>
+          </li>
+          <li class="all-vacancy__card">
+            <a href="vacancy.html">
+              <div class="all-vacancy__image">
+                <img src="img/all-vacancy_2.jpg" alt="">
+              </div>
+              <h3 class="all-vacancy__title">Инженер</h3>
+              <p class="all-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in ...</p>
+            </a>
+          </li>
+          <li class="all-vacancy__card">
+            <a href="vacancy.html">
+              <div class="all-vacancy__image">
+                <img src="img/all-vacancy_3.jpg" alt="">
+              </div>
+              <h3 class="all-vacancy__title">Прораб</h3>
+              <p class="all-vacancy__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in ...</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <button class="scrollTop _hide" id="scrollTop">
+    <svg
+      width="46"
+      height="46"
+      viewBox="0 0 46 46"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="23" cy="23" r="23" fill="#709DA0"/>
+      <path
+        d="M30.2 22.3999L29.5999 23.0999L22.8999 16.6998L16.2 23.0999L15.5 22.3999L22.8999 15.2998L30.2 22.3999Z"
+        fill="white"
+        stroke="white"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M22.3999 15.8999L22.3999 28.3999L23.3999 28.3999L23.3999 15.8999L22.3999 15.8999Z"
+        fill="white"
+        stroke="white"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+  @include('partials/footer.html')
+</div>
+</body>
+</html>
